@@ -1,0 +1,9 @@
+<div style="height: 100%;">
+    <section class="display-product" *ngIf="product$ | async as product">
+        <mat-card style="height: 300px; width: 300px;">
+            <h1> {{product.name}} </h1>
+            <h2> {{product.description }} </h2>
+            <h3> AED {{ product.price }}  </h3>
+        </mat-card>
+    </section>
+</div>

@@ -1,0 +1,28 @@
+<div style="padding: 20px;">
+    <div style="padding: 20px;">
+        <h2>Create Product</h2>
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>Product name</mat-label>
+                <input name='name' [(ngModel)]="newProduct.name" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Product description</mat-label>
+                <input name='description' [(ngModel)]="newProduct.description" matInput>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Price</mat-label>
+                <input name='price' [(ngModel)]="newProduct.price" type='number' matInput placeholder="In AED">
+            </mat-form-field>
+    
+            <button (click)="addNewProduct()" style="margin-left: 33%;" mat-raised-button color="primary">Add
+                Product</button>
+        </form>
+    </div>
+    <mat-divider></mat-divider>
+    <div style="padding: 20px;">
+        <app-product-list></app-product-list>
+    </div>
+</div>
